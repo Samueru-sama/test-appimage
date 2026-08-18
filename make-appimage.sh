@@ -11,6 +11,10 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=/usr/share/icons/hicolor/scalable/apps/webapp-manager.svg
 export DESKTOP=/usr/share/applications/webapp-manager.desktop
 export DEPLOY_PYTHON=1
+export PATH_MAPPING='
+	/usr/share/webapp-manager:${SHARUN_DIR}/share/webapp-manager
+	/usr/share/locale:${SHARUN_DIR}/share/locale
+'
 
 # Deploy dependencies
 quick-sharun \
